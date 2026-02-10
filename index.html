@@ -83,6 +83,58 @@
             margin-bottom: 1rem;
         }
 
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 8px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .profile-text {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .section {
+            margin-top: 3rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            margin-bottom: 0.75rem;
+        }
+
+        .research-item {
+            margin-top: 0.5rem;
+        }
+
+        .research-title {
+            font-style: italic;
+        }
+
+        .research-links {
+            margin-top: 0.35rem;
+            font-size: 0.95rem;
+        }
+
+        .research-links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .research-links a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
@@ -117,6 +169,34 @@
     <div class="container">
         <div class="hero">
             <h1>Hi, I'm Celine!</h1>
+            <div class="profile">
+                <img src="docs/assets/images/pfp.jpg" alt="Profile photo of Celine Tan" class="profile-img">
+                <p class="profile-text">
+                    I am a current undergraduate at UC Berkeley advised by Sergey Levine conducting research in navigation.
+                    Previously, I've also had the fortune of conducting research with Holger Mueller as a
+                    <a href="https://physics.berkeley.edu/academics/research-opportunities-board/physics-innovators-initiative-pi2-scholars-program" target="_blank" rel="noopener noreferrer">
+                        Physics Innovators Initiative Scholar.
+                    </a>
+                </p>
+            </div>
+
+            <div class="section" id="research">
+                <h2>Research</h2>
+                <div class="research-item">
+                    <div class="research-title">
+                        SteerVLA: Steering Vision-Language-Action Models in Long-Tail Driving Scenarios
+                    </div>
+                    <div class="research-authors">
+                        Tian Gao*, Celine Tan*, Catherine Glossop, Timothy Gao, Jiankai Sun, Kyle Stachowicz,
+                        Shirley Wu, Oier Mees, Dorsa Sadigh, Sergey Levine, Chelsea Finn (* denotes equal contribution)
+                    </div>
+                    <div class="research-links">
+                        <a href="https://arxiv.org/abs/2602.08440" target="_blank" rel="noopener noreferrer">arXiv</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://steervla.github.io/" target="_blank" rel="noopener noreferrer">Project website</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
